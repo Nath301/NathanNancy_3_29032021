@@ -6,13 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="robots" content="index,follow">
 		<script src="https://kit.fontawesome.com/c1fae08d36.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700;400&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
 		<div class="containter">
-			<header>	
-				<img class="main-logo" src="images/logo/ohmyfood.png" alt="main logo">
+			<header>
+				<div class="main-logo-div">
+					<img src="images/logo/ohmyfood.png" alt="main logo">
+				</div>
 				<div class="location-box">
 					<div class="location">
 						<i class="fas fa-map-marker-alt"></i>
@@ -20,13 +24,15 @@
 					</div>
 				</div>
 				<section class="explore-box">
-					<p>Réserver le menu qui vous convient</p>
-					<p>Découvrer des restaurants d'exception, séléctionnés par nos soins.</p>
-					<div>
-						<div class="explore-button">
+					<div class="explore-info">
+						<p class="reservation"><strong>Réserver le menu qui <br>vous convient</strong></p>
+						<p class="discovery">Découvrer des restaurants d'exception,<br>séléctionnés par nos soins.</p>
+					</div>
+					<button class="explore-button">
+						<div>
 							<p>Explorer nos restaurants</p>
 						</div>
-					</div>
+					</button>
 				</section>
 			</header>
 			<main>

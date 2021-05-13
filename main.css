@@ -1,3 +1,95 @@
+html {
+  max-width: 375px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+html body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+html body header {
+  width: 100%;
+}
+html body main {
+  width: 100%;
+}
+html body footer {
+  width: 100%;
+}
 
+.main-logo-div {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 3px 6px -3px rgba(0, 0, 0, 0.1);
+}
+.main-logo-div img {
+  width: 160px;
+  height: auto;
+  margin: 1em 0;
+}
+
+.location-box {
+  width: 100%;
+  height: fit-content;
+  background-color: #e6e6e6;
+}
+.location-box .location {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+}
+.location-box .location .fa-map-marker-alt {
+  margin-right: 1em;
+}
+.location-box .location p {
+  font-weight: bolder;
+}
+
+.explore-box {
+  background-color: #f2f2f2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 280px;
+}
+.explore-box .explore-info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  height: 120px;
+}
+.explore-box .explore-info .reservation {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.explore-box .explore-button {
+  margin-bottom: 2em;
+  width: 215px;
+  height: 50px;
+  border-radius: 30px;
+  background: #9356dc;
+  background: linear-gradient(350deg, #9356dc 51%, #ff79da 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+.explore-box .explore-button p {
+  color: white;
+  font-weight: 400;
+}
+
+.dish-photo {
+  width: 375px;
+}
 
 /*# sourceMappingURL=main.css.map */
