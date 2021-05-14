@@ -1,11 +1,11 @@
 html{
-    max-width: 375px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     body{
         width: 100%;
         display: flex;
         flex-direction: column;
+        background-color: white;
         header{
             width: 100%;
         }
@@ -23,6 +23,7 @@ html{
     display: flex;
     justify-content: center;
     box-shadow: 0px 3px 6px -3px rgba(0,0,0,0.1);
+    background-color: white;
     img{
         width: 160px;
         height: auto;
@@ -47,7 +48,7 @@ html{
         }
     }
 }
-.explore-box{
+.section-1{
     background-color: #f2f2f2;
     width: 100%;
     display: flex;
@@ -84,6 +85,140 @@ html{
         }
     }
 }
-.dish-photo{
-    width: 375px;
+.explanation-box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1em;
+    margin-top: 3em;
+    .explanation-box-title{
+        width: 100%;
+        margin-bottom: 1.5em;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .steps{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .step{
+            display: flex;
+            width: 100%;
+            height: 50px;
+        }
+    }
+}
+.step{
+    display: flex;
+    align-items: center;
+    .num{
+        width: 1.2em;
+        height: 1.2em;
+        border-radius: 10px;
+        background-color: rgb(147,86,220);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 0.9em;
+    }
+    .task{
+        width: 90%;
+        height: 4em;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 20px;
+        box-shadow: 2px 5px 15px 5px rgba(0,0,0,0.07);
+        display: flex;
+        align-items: center;
+    }
+}
+.section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    h3{
+        width: 90%;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+}
+.restaurants{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choice{
+    width: 90%;
+    height: 15em;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 5px 15px 5px rgba(0,0,0,0.07);
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .dish-photo{
+        width: 100%;
+        height: 70%;
+        border-radius: 18px 18px 0 0;
+        object-fit: cover;
+    }
+    .about-choice{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 30%;
+        .fa-heart{
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+    }
+}
+.informations{
+    p{
+        margin: 0.5em 0;
+    }
+    .restaurant-name{
+        font-weight: bold;
+    }
+}
+footer{
+    background-color: grey;
+    color: white;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container{
+        margin-top: 2em;
+        width: 90%;
+        .logo-svg{
+            margin-bottom: 2em;
+        }
+        .footer-info{
+            margin: 1em 0;
+        }
+    }
+}
+.link{
+    margin-bottom: 0.8em;
+    display: flex;
+    .fa-utensils,
+    .fa-hands-helping{
+        margin-right: 1em;
+        width: 1em;
+    }
+
 }

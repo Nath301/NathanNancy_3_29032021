@@ -1,5 +1,4 @@
 html {
-  max-width: 375px;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
@@ -7,6 +6,7 @@ html body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 html body header {
   width: 100%;
@@ -24,6 +24,7 @@ html body footer {
   display: flex;
   justify-content: center;
   box-shadow: 0px 3px 6px -3px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 .main-logo-div img {
   width: 160px;
@@ -50,7 +51,7 @@ html body footer {
   font-weight: bolder;
 }
 
-.explore-box {
+.section-1 {
   background-color: #f2f2f2;
   width: 100%;
   display: flex;
@@ -59,7 +60,7 @@ html body footer {
   justify-content: space-around;
   height: 280px;
 }
-.explore-box .explore-info {
+.section-1 .explore-info {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -67,11 +68,11 @@ html body footer {
   justify-content: space-around;
   height: 120px;
 }
-.explore-box .explore-info .reservation {
+.section-1 .explore-info .reservation {
   font-weight: bold;
   font-size: 1.5em;
 }
-.explore-box .explore-button {
+.section-1 .explore-button {
   margin-bottom: 2em;
   width: 215px;
   height: 50px;
@@ -83,13 +84,151 @@ html body footer {
   align-items: center;
   border: 0;
 }
-.explore-box .explore-button p {
+.section-1 .explore-button p {
   color: white;
   font-weight: 400;
 }
 
-.dish-photo {
-  width: 375px;
+.explanation-box {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1em;
+  margin-top: 3em;
+}
+.explanation-box .explanation-box-title {
+  width: 100%;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.explanation-box .steps {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.explanation-box .steps .step {
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+}
+.step .num {
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 10px;
+  background-color: #9356dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.9em;
+}
+.step .task {
+  width: 90%;
+  height: 4em;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: 2px 5px 15px 5px rgba(0, 0, 0, 0.07);
+  display: flex;
+  align-items: center;
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+.section-3 h3 {
+  width: 90%;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.restaurants {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choice {
+  width: 90%;
+  height: 15em;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 5px 15px 5px rgba(0, 0, 0, 0.07);
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.choice .dish-photo {
+  width: 100%;
+  height: 70%;
+  border-radius: 18px 18px 0 0;
+  object-fit: cover;
+}
+.choice .about-choice {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30%;
+}
+.choice .about-choice .fa-heart {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.informations p {
+  margin: 0.5em 0;
+}
+.informations .restaurant-name {
+  font-weight: bold;
+}
+
+footer {
+  background-color: grey;
+  color: white;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .container {
+  margin-top: 2em;
+  width: 90%;
+}
+footer .container .logo-svg {
+  margin-bottom: 2em;
+}
+footer .container .footer-info {
+  margin: 1em 0;
+}
+
+.link {
+  margin-bottom: 0.8em;
+  display: flex;
+}
+.link .fa-utensils,
+.link .fa-hands-helping {
+  margin-right: 1em;
+  width: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
