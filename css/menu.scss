@@ -1,0 +1,109 @@
+@import "../css/main.scss";
+
+@mixin arrow{
+    font-size: 2em;
+}
+@mixin menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+    height: 30em;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        header{
+            width: 100%;
+        }
+        main{
+            width: 100%;
+        }
+        footer{
+            width: 100%;
+        }
+    }
+}
+.header-logo{
+    @include logo;
+    flex-wrap: wrap;
+    a{
+        width: 10%;
+        display: flex;
+        align-items: center;
+    }
+    .main-logo-div{
+        width: 90%
+    }
+}
+.fa-arrow-left{
+    @include arrow;
+    position: relative;
+}
+.main-logo-div{
+    img{
+        width: 160px;
+        height: auto;
+        margin: 1em 0;
+    }
+}
+.main-photo{
+    width: 100%;
+}
+.step{
+    display: flex;
+    align-items: center;
+    .num{
+        width: 1.2em;
+        height: 1.2em;
+        border-radius: 10px;
+        background-color: rgb(147,86,220);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 0.9em;
+    }
+    .task{
+        @include button();
+        width: 90%;
+    }
+}
+.upper-menu{
+    display: flex;
+}
+footer{
+    background-color: darkgrey;
+    color: white;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .container{
+        margin-top: 2em;
+        width: 90%;
+        .logo-svg{
+            margin-bottom: 2em;
+        }
+        .footer-info{
+            margin: 1em 0;
+        }
+    }
+}
+.link{
+    margin-bottom: 0.8em;
+    display: flex;
+    .fa-utensils,
+    .fa-hands-helping{
+        margin-right: 1em;
+        width: 1em;
+    }
+
+}
