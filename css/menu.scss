@@ -3,6 +3,11 @@
 @mixin arrow{
     font-size: 2em;
 }
+@mixin green-bar{
+    width: 2.3em;
+    height: 0.2em;
+    background-color: green;
+}
 @mixin menu{
     display: flex;
     flex-direction: column;
@@ -77,6 +82,57 @@ html{
 }
 .upper-menu{
     display: flex;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .upper-menu{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        h3{
+            font-style: italic;
+            font-size: 1.9em;
+            font-weight: bold;
+        }
+        .fa-heart{
+            font-size: 1.7em;
+        }
+    }
+    .menu-options{
+        width: 90%;
+    }
+}
+.starter{
+    display: flex;
+    flex-direction: column;
+}
+.green-bar{
+    @include green-bar;
+}
+.dishes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.dish{
+    width: 95%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    .dish-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 footer{
     background-color: darkgrey;
