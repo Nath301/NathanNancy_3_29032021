@@ -3,19 +3,9 @@ html {
   font-weight: 100;
 }
 html body {
-  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: white;
-}
-html body header {
-  width: 100%;
-}
-html body main {
-  width: 100%;
-}
-html body footer {
-  width: 100%;
 }
 
 .main-logo-div {
@@ -77,11 +67,8 @@ html body footer {
   width: 215px;
   height: 50px;
   border-radius: 30px;
-  background: #9356dc;
-  background: linear-gradient(350deg, #9356dc 51%, #ff79da 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #9356DC;
+  background: linear-gradient(350deg, #9356DC 51%, #FF79DA 100%);
   border: 0;
   color: white;
   font-weight: bolder;
@@ -124,7 +111,7 @@ html body footer {
   width: 1.2em;
   height: 1.2em;
   border-radius: 10px;
-  background-color: #9356dc;
+  background-color: #9356DC;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,13 +225,16 @@ html body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: white;
 }
 html body header {
   width: 100%;
 }
 html body main {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1em 1em 0 0;
 }
 html body footer {
   width: 100%;
@@ -283,41 +273,19 @@ html body footer {
   width: 100%;
 }
 
-.step {
-  display: flex;
-  align-items: center;
-}
-.step .num {
-  width: 1.2em;
-  height: 1.2em;
-  border-radius: 10px;
-  background-color: #9356dc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 0.9em;
-}
-.step .task {
-  height: 4em;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 20px;
-  box-shadow: 2px 5px 15px 5px rgba(0, 0, 0, 0.07);
-  display: flex;
-  align-items: center;
-  width: 90%;
-}
-
 .upper-menu {
   display: flex;
+  margin-top: 2em;
 }
 
 .menu {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 3em 3em 0 0;
+  background-color: #F2F2F2;
 }
 .menu .upper-menu {
   width: 90%;
@@ -339,6 +307,15 @@ html body footer {
 .starter {
   display: flex;
   flex-direction: column;
+  margin-top: 2em;
+}
+
+.main-course {
+  margin-top: 2em;
+}
+
+.desserts {
+  margin-top: 2em;
 }
 
 .green-bar {
@@ -351,23 +328,38 @@ html body footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 200px;
+  align-items: center;
+  height: 18em;
+  margin-top: 1em;
 }
 
 .dish {
-  width: 95%;
+  width: 100%;
+  height: 5em;
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
+  justify-content: space-around;
+  border-radius: 10px;
 }
 .dish .dish-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+}
+
+button {
+  margin-bottom: 2em;
+  width: 215px;
+  height: 50px;
+  border-radius: 30px;
+  background: #9356DC;
+  background: linear-gradient(350deg, #9356DC 51%, #FF79DA 100%);
+  border: 0;
+  color: white;
+  font-weight: bolder;
+  margin-top: 2em;
 }
 
 footer {

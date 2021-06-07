@@ -8,14 +8,6 @@
     height: 0.2em;
     background-color: green;
 }
-@mixin menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    border-radius: 1em 1em 0 0;
-    height: 30em;
-}
 html{
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
@@ -23,12 +15,15 @@ html{
         width: 100%;
         display: flex;
         flex-direction: column;
-        background-color: white;
         header{
             width: 100%;
         }
         main{
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 1em 1em 0 0;
         }
         footer{
             width: 100%;
@@ -61,33 +56,18 @@ html{
 .main-photo{
     width: 100%;
 }
-.step{
-    display: flex;
-    align-items: center;
-    .num{
-        width: 1.2em;
-        height: 1.2em;
-        border-radius: 10px;
-        background-color: rgb(147,86,220);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 0.9em;
-    }
-    .task{
-        @include button();
-        width: 90%;
-    }
-}
 .upper-menu{
     display: flex;
+    margin-top: 2em;
 }
 .menu{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 3em 3em 0 0;
+    background-color: #F2F2F2;
     .upper-menu{
         width: 90%;
         display: flex;
@@ -108,6 +88,13 @@ html{
 .starter{
     display: flex;
     flex-direction: column;
+    margin-top: 2em;
+}
+.main-course{
+    margin-top: 2em;
+}
+.desserts{
+    margin-top: 2em;
 }
 .green-bar{
     @include green-bar;
@@ -116,23 +103,28 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 200px;
+    align-items: center;
+    height: 18em;
+    margin-top: 1em;
 }
-
 .dish{
-    width: 95%;
+    width: 100%;
+    height: 5em;
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+    justify-content: space-around;
+    border-radius: 10px;
     .dish-details{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
     }
+}
+button{
+    @include colored-button;
+    margin-top: 2em;
 }
 footer{
     background-color: darkgrey;
