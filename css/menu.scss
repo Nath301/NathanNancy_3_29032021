@@ -1,12 +1,13 @@
 @import "../css/main.scss";
 
 @mixin arrow{
-    font-size: 2em;
+    font-size: 1.3em;
 }
 @mixin green-bar{
+    margin-top: 0.5em;
     width: 2.3em;
     height: 0.2em;
-    background-color: green;
+    background-color: #99e2d0;
 }
 html{
     font-family: 'Roboto', sans-serif;
@@ -33,18 +34,27 @@ html{
 .header-logo{
     @include logo;
     flex-wrap: wrap;
-    a{
-        width: 10%;
+    .back-button{
+        width: 12%;
         display: flex;
         align-items: center;
+        color: #000;
+        font-weight: 900;
+    }
+    .back-button:link{
+        text-decoration: none;
     }
     .main-logo-div{
-        width: 90%
+        width: 76%
+    }
+    .space{
+        width: 12%;
     }
 }
 .fa-arrow-left{
     @include arrow;
     position: relative;
+    margin-left: 1em;
 }
 .main-logo-div{
     img{
@@ -59,6 +69,7 @@ html{
 .upper-menu{
     display: flex;
     margin-top: 2em;
+    font-family: Shrikhand,"cursive";
 }
 .menu{
     width: 100%;
@@ -67,18 +78,19 @@ html{
     justify-content: center;
     align-items: center;
     border-radius: 3em 3em 0 0;
-    background-color: #F2F2F2;
+    background-color: #f6f6f6;;
+    margin-top: -4em;
+    z-index: 1;
     .upper-menu{
         width: 90%;
         display: flex;
         justify-content: space-between;
-        h3{
-            font-style: italic;
-            font-size: 1.9em;
-            font-weight: bold;
+        h2{
+            font-size: 1.7em;
         }
         .fa-heart{
             font-size: 1.7em;
+            margin-right: 1em;
         }
     }
     .menu-options{
@@ -89,12 +101,21 @@ html{
     display: flex;
     flex-direction: column;
     margin-top: 2em;
+    h3{
+        width: 90%;
+    }
 }
 .main-course{
     margin-top: 2em;
+    h3{
+        width: 90%;
+    }
 }
 .desserts{
     margin-top: 2em;
+    h3{
+        width: 90%;
+    }
 }
 .green-bar{
     @include green-bar;
@@ -102,34 +123,44 @@ html{
 .dishes{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     height: 18em;
-    margin-top: 1em;
 }
 .dish{
-    width: 100%;
+    width: 90%;
     height: 5em;
+    margin-top: 1em;
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    border-radius: 10px;
+    justify-content: center;
+    border-radius: 1em;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    padding-left: 1em;
+    padding-right: 1em;
+    h4{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
     .dish-details{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
+        margin-top: 0.5em;
+    }
+    .price{
+        font-weight: bold;
     }
 }
 button{
     @include colored-button;
     margin-top: 2em;
+    font-size: 1.1em;
 }
 footer{
-    background-color: darkgrey;
+    background-color: #353535;
     color: white;
-    height: 30em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,8 +168,11 @@ footer{
     .container{
         margin-top: 2em;
         width: 90%;
-        .logo-svg{
-            margin-bottom: 2em;
+        .logo-footer{
+            margin-bottom: 3em;
+            color: #FFF;
+            font-family: Shrikhand,"cursive";
+            font-size: 1.2em;
         }
         .footer-info{
             margin: 1em 0;

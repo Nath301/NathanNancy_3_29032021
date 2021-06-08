@@ -9,12 +9,9 @@ html body {
 }
 
 .main-logo-div {
-  width: 100%;
-  position: relative;
   display: flex;
   justify-content: center;
   box-shadow: 0px 3px 6px -3px rgba(0, 0, 0, 0.1);
-  background-color: white;
 }
 .main-logo-div img {
   width: 160px;
@@ -72,6 +69,7 @@ html body {
   border: 0;
   color: white;
   font-weight: bolder;
+  font-size: 1em;
 }
 
 .explanation-box {
@@ -179,8 +177,12 @@ html body {
   justify-content: flex-start;
   margin-top: 10px;
   font-size: 1.5em;
+  color: #000;
 }
 
+.informations {
+  color: #000;
+}
 .informations p {
   margin: 0.5em 0;
 }
@@ -189,7 +191,7 @@ html body {
 }
 
 footer {
-  background-color: darkgrey;
+  background-color: #353535;
   color: white;
   height: 15em;
   display: flex;
@@ -200,14 +202,18 @@ footer .container {
   margin-top: 2em;
   width: 90%;
 }
-footer .container .logo-svg {
-  margin-bottom: 2em;
+footer .container .logo-footer {
+  margin-bottom: 3em;
+  color: #FFF;
+  font-family: Shrikhand, "cursive";
+  font-size: 1.2em;
 }
 footer .container .footer-info {
   margin: 1em 0;
 }
 
 .link {
+  margin-top: 1em;
   margin-bottom: 0.8em;
   display: flex;
 }
@@ -241,26 +247,32 @@ html body footer {
 }
 
 .header-logo {
-  width: 100%;
-  position: relative;
   display: flex;
   justify-content: center;
   box-shadow: 0px 3px 6px -3px rgba(0, 0, 0, 0.1);
-  background-color: white;
   flex-wrap: wrap;
 }
-.header-logo a {
-  width: 10%;
+.header-logo .back-button {
+  width: 12%;
   display: flex;
   align-items: center;
+  color: #000;
+  font-weight: 900;
+}
+.header-logo .back-button:link {
+  text-decoration: none;
 }
 .header-logo .main-logo-div {
-  width: 90%;
+  width: 76%;
+}
+.header-logo .space {
+  width: 12%;
 }
 
 .fa-arrow-left {
-  font-size: 2em;
+  font-size: 1.3em;
   position: relative;
+  margin-left: 1em;
 }
 
 .main-logo-div img {
@@ -276,6 +288,7 @@ html body footer {
 .upper-menu {
   display: flex;
   margin-top: 2em;
+  font-family: Shrikhand, "cursive";
 }
 
 .menu {
@@ -285,20 +298,21 @@ html body footer {
   justify-content: center;
   align-items: center;
   border-radius: 3em 3em 0 0;
-  background-color: #F2F2F2;
+  background-color: #f6f6f6;
+  margin-top: -4em;
+  z-index: 1;
 }
 .menu .upper-menu {
   width: 90%;
   display: flex;
   justify-content: space-between;
 }
-.menu .upper-menu h3 {
-  font-style: italic;
-  font-size: 1.9em;
-  font-weight: bold;
+.menu .upper-menu h2 {
+  font-size: 1.7em;
 }
 .menu .upper-menu .fa-heart {
   font-size: 1.7em;
+  margin-right: 1em;
 }
 .menu .menu-options {
   width: 90%;
@@ -319,34 +333,45 @@ html body footer {
 }
 
 .green-bar {
+  margin-top: 0.5em;
   width: 2.3em;
   height: 0.2em;
-  background-color: green;
+  background-color: #99e2d0;
 }
 
 .dishes {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   height: 18em;
-  margin-top: 1em;
 }
 
 .dish {
-  width: 100%;
+  width: 90%;
   height: 5em;
+  margin-top: 1em;
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  border-radius: 10px;
+  justify-content: center;
+  border-radius: 1em;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.dish h4 {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .dish .dish-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  margin-top: 0.5em;
+}
+.dish .price {
+  font-weight: bold;
 }
 
 button {
@@ -360,12 +385,12 @@ button {
   color: white;
   font-weight: bolder;
   margin-top: 2em;
+  font-size: 1.1em;
 }
 
 footer {
-  background-color: darkgrey;
+  background-color: #353535;
   color: white;
-  height: 30em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -375,8 +400,11 @@ footer .container {
   margin-top: 2em;
   width: 90%;
 }
-footer .container .logo-svg {
-  margin-bottom: 2em;
+footer .container .logo-footer {
+  margin-bottom: 3em;
+  color: #FFF;
+  font-family: Shrikhand, "cursive";
+  font-size: 1.2em;
 }
 footer .container .footer-info {
   margin: 1em 0;
