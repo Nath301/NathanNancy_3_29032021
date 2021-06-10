@@ -4,7 +4,9 @@ $tertiary-color: #99E2D0;
 @mixin logo{
     display: flex;
     justify-content: center;
-    box-shadow: 0px 3px 6px -3px rgba(0,0,0,0.1);
+    position: relative;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    z-index: 1;
 }
 @mixin button{
     height: 4em;
@@ -17,13 +19,14 @@ $tertiary-color: #99E2D0;
 }
 @mixin colored-button{
     margin-bottom: 2em;
-    width: 215px;
-    height: 50px;
+    width: 9em;
+    height: 3.6em;
     border-radius: 30px;
     background: $primary-color;
     background: linear-gradient(350deg, $primary-color 51%, $secondary-color 100%);
     border: 0;
     color: white;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
     font-weight: bolder;
 }
 html{
@@ -38,7 +41,7 @@ html{
 .main-logo-div{
     @include logo;
     img{
-        width: 160px;
+        width: 12em;
         height: auto;
         margin: 1em 0;
     }
@@ -46,13 +49,13 @@ html{
 .location-box{
     width: 100%;
     height: fit-content;
-    background-color: #e6e6e6;
+    background-color: #f3f3f3;
     .location{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 40px;
+        height: 3.5em;
         .fa-map-marker-alt{
             margin-right: 1em;
         }
@@ -62,7 +65,7 @@ html{
     }
 }
 .section-1{
-    background-color: #f2f2f2;
+    background-color: #fafafa;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -83,7 +86,9 @@ html{
     }
     .explore-button{
         @include colored-button();
+        width: 14em;
         font-size: 1em;
+        font-weight: bold;
     }
 }
 .section-2{
@@ -156,6 +161,7 @@ html{
     align-items: center;
 }
 .choice{
+    position: relative;
     width: 90%;
     height: 15em;
     background-color: white;
@@ -172,6 +178,15 @@ html{
         height: 70%;
         border-radius: 18px 18px 0 0;
         object-fit: cover;
+    }
+    .new{
+        background-color: $tertiary-color;
+        color: #1b6150;
+        padding: .5rem;
+        border-radius: .125rem;
+        position: absolute;
+        top: 1rem;
+        right: .75rem;
     }
     .about-choice{
         width: 90%;
@@ -229,3 +244,4 @@ footer{
     }
 
 }
+

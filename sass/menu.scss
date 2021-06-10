@@ -1,4 +1,4 @@
-@import "../css/main.scss";
+@import "main.scss";
 
 @mixin arrow{
     font-size: 1.3em;
@@ -32,7 +32,7 @@ html{
     }
 }
 .header-logo{
-    @include logo;
+    @include logo;  
     flex-wrap: wrap;
     .back-button{
         width: 12%;
@@ -57,6 +57,7 @@ html{
     margin-left: 1em;
 }
 .main-logo-div{
+    box-shadow: none; 
     img{
         width: 160px;
         height: auto;
