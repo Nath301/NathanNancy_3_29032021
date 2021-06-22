@@ -57,12 +57,8 @@ html{
     margin-left: 1em;
 }
 .main-logo-div{
-    box-shadow: none; 
-    img{
-        width: 160px;
-        height: auto;
-        margin: 1em 0;
-    }
+    @include logo-div;
+    box-shadow: none;
 }
 .main-photo{
     width: 100%;
